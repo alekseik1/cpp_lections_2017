@@ -4,15 +4,15 @@
  {
      char x;
      void bar() {
-         std::cout << "A";
-    )
+         std::cout << "A" << std::endl;
+     }
 };
 
 struct B : A    // struct inheritance is always public
 {
     int y;
     void bar() {
-        std::cout << "B";
+        std::cout << "B" << std::endl;
     }
 };
 
@@ -20,9 +20,9 @@ struct C: A
 {
     double z;
     void bar() {
-        std::cout << "C";
+        std::cout << "C" << std::endl;
     }
-}
+};
 
 void foo(A& p)
 {
